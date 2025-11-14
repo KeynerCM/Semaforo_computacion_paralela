@@ -1,0 +1,2 @@
+# Semaforo_computacion_paralela
+Programacion paralela
