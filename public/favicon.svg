@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fondo del semáforo -->
+  <rect x="30" y="5" width="40" height="90" rx="8" fill="#2a2a2a" stroke="#000" stroke-width="2"/>
+  
+  <!-- Luz roja -->
+  <circle cx="50" cy="22" r="12" fill="#ff4444" opacity="0.9"/>
+  <circle cx="50" cy="22" r="10" fill="#ff6666" opacity="0.6"/>
+  <circle cx="50" cy="22" r="6" fill="#ff8888" opacity="0.4"/>
+  
+  <!-- Luz amarilla -->
+  <circle cx="50" cy="50" r="12" fill="#444" opacity="0.3"/>
+  
+  <!-- Luz verde -->
+  <circle cx="50" cy="78" r="12" fill="#44ff44" opacity="0.9"/>
+  <circle cx="50" cy="78" r="10" fill="#66ff66" opacity="0.6"/>
+  <circle cx="50" cy="78" r="6" fill="#88ff88" opacity="0.4"/>
+  
+  <!-- Detalles de brillo -->
+  <circle cx="46" cy="19" r="3" fill="#fff" opacity="0.6"/>
+  <circle cx="46" cy="75" r="3" fill="#fff" opacity="0.6"/>
+</svg>
