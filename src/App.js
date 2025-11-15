@@ -220,7 +220,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Sistema de Control de Semáforos</h1>
-        <p className="subtitle">Computación Paralela</p>
+        <p className="subtitle">Computación y Programación Paralela</p>
       </header>
 
       <div className="main-container">
