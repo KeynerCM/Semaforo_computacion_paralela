@@ -4,7 +4,7 @@ Sistema inteligente de control de semáforos que simula el funcionamiento coordi
 
 ## Descripción del Proyecto
 
-Este proyecto implementa un sistema de control de tráfico que simula **4 semáforos independientes** (Norte, Sur, Este, Oeste) que funcionan de manera coordinada para controlar el flujo vehicular en un cruce de calles. El sistema garantiza que nunca haya dos direcciones opuestas en verde simultáneamente, evitando colisiones.
+Este proyecto implementa un sistema de control de tráfico que simula **4 semáforos independientes** (Norte, Sur, Este, Oeste) que funcionan de manera coordinada para controlar el flujo vehicular en un cruce de calles. El sistema garantiza que nunca haya dos direcciones opuestas en verde simultáneamente.
 
 ## Características Principales
 
@@ -64,6 +64,7 @@ npm start
 
 El proyecto se abrirá automáticamente en `http://localhost:3000`
 
+Link de deploy: `https://semaforocompuparalela.netlify.app/`
 
 ## Arquitectura del Sistema
 
