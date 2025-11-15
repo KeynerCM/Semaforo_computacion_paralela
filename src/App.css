@@ -1,0 +1,197 @@
+.App {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App-header {
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
+  animation: fadeIn 1s ease-in;
+}
+
+.App-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  font-weight: 300;
+}
+
+.main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.intersection-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  background: #2a2a2a;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.road {
+  position: absolute;
+  background: #3a3a3a;
+}
+
+.road.horizontal {
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.road.vertical {
+  height: 100%;
+  width: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+}
+
+.lane {
+  flex: 1;
+  position: relative;
+  border: 2px dashed rgba(255, 255, 255, 0.3);
+}
+
+.intersection-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  background: #4a4a4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.center-marker {
+  width: 80%;
+  height: 80%;
+  border: 3px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.traffic-light-wrapper {
+  position: absolute;
+  z-index: 10;
+}
+
+.traffic-light-wrapper.north {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.traffic-light-wrapper.south {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.traffic-light-wrapper.east {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.traffic-light-wrapper.west {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.controls-stats-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 900px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .intersection-container {
+    width: 500px;
+    height: 500px;
+  }
+
+  .road.horizontal {
+    height: 200px;
+  }
+  
+  .road.vertical {
+    width: 200px;
+  }
+  
+  .intersection-center {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .controls-stats-container {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .intersection-container {
+    width: 320px;
+    height: 320px;
+  }
+  
+  .road.horizontal {
+    height: 140px;
+  }
+  
+  .road.vertical {
+    width: 140px;
+  }
+  
+  .intersection-center {
+    width: 140px;
+    height: 140px;
+  }
+}
